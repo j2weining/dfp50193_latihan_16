@@ -112,32 +112,6 @@ $program = [
         </tr>
     </table> -->
 
-    <!-- <table border="1" cellpadding="3" cellspacing="0">
-        <tr id="title">
-            <th>PROGRAM</th>
-            <th>KELAYAKAN</th>
-        </tr>
-    <?php
-    foreach ($program as $poli => $value){
-        echo "<td colspan=2 id=poli>$poli</td>";
-        echo "<tr>";
-        foreach ($value as $course =>$test){
-            echo "<td rowspan=2>$course</td>";
-            
-            foreach($test as $kelayakan){
-                echo "<td>$kelayakan</td>";
-                echo "<tr>";
-                
-            }
-            echo '</td>';
-            echo "</tr>";
-        }
-        echo '</tr>';
-        
-    }
-    ?>
-    </table> -->
-
     <table border="1" cellpadding="3" cellspacing="0">
         <tr id="title">
             <td>PROGRAM</td>
