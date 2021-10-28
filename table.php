@@ -3,33 +3,26 @@ $program = [
     'Politeknik Ungku Omar' => [
         'Sarjana Muda Teknokologi Kejuruteraan Awam Dengan Kepujian'=>[
             'STPM',
-            'Matrikulasi'
         ],
         'Sarjana Muda Teknokologi Kejuruteraan Pembuatan (Pengurusan Rangkaian Bekalan) Dengan Kepujian'=>[
             'STPM',
-            'Matrikulasi',
         ],
         'Diploma Kejuruteraan Awam'=>[
             'SPM',
-            'Sijil Kolej Komuniti',
         ],
         'Diploma Seni Bina'=>[
             'SPM',
-            'Sijil Kolej Komuniti',
         ],
     ],
     'Politeknik Sultan Haji Ahmad Shah' => [
         'Diploma Kejuruteraan Awam'=>[
             'SPM',
-            'Sijil Kolej Komuniti',
         ],
         'Diploma Seni Bina'=>[
             'SPM',
-            'Sijil Kolej Komuniti',
         ],
         'Diploma Geomatik'=>[
             'SPM',
-            'Sijil Kolej Komuniti',
         ],
     ],
 ];
@@ -119,7 +112,7 @@ $program = [
         </tr>
     </table> -->
 
-    <table border="1" cellpadding="3" cellspacing="0">
+    <!-- <table border="1" cellpadding="3" cellspacing="0">
         <tr id="title">
             <th>PROGRAM</th>
             <th>KELAYAKAN</th>
@@ -141,6 +134,32 @@ $program = [
         }
         echo '</tr>';
         
+    }
+    ?>
+    </table> -->
+
+    <table border="1" cellpadding="3" cellspacing="0">
+        <tr id="title">
+            <td>PROGRAM</td>
+            <td>KELAYAKAN</td>
+        </tr>
+        
+    <?php
+    foreach ($program as $poli => $value){
+        echo '<tr>';
+        echo "<th colspan=2 id=poli>$poli</th>";
+        echo '</tr>';
+        foreach ($value as $course =>$test){
+            echo '<tr>';
+            echo "<td rowspan=2>$course</td>";
+            echo "</tr>";
+            foreach($test as $kelayakan){
+                echo '<tr>';
+                echo "<td>$kelayakan</td>";
+                echo "</tr>";
+                
+            }
+        }
     }
     ?>
     </table>
