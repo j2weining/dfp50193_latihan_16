@@ -3,13 +3,11 @@ $program = [
     'Politeknik Ungku Omar' => [
         'Sarjana Muda Teknokologi Kejuruteraan Awam Dengan Kepujian'=>[
             '(A)' =>'STPM',
-            '(B)' =>'Matrikulasi',
-            '(C)' =>'Diploma'
+            '(B)' =>'Matrikulasi'
         ],
         'Sarjana Muda Teknokologi Kejuruteraan Pembuatan (Pengurusan Rangkaian Bekalan) Dengan Kepujian'=>[
             'STPM',
             'Matrikulasi',
-            'Diploma'
         ],
         'Diploma Kejuruteraan Awam'=>[
             'SPM',
@@ -120,15 +118,15 @@ $program = [
             <td> Sijil Kolej Komuniti</td>
         </tr>
     </table> -->
-    
-    <table border="1">
-        <tr style="background: red; color: white">
-            <td><b>PROGRAM</b></td>
-            <td><b>KELAYAKAN</b></td>
+
+    <table border="1" cellpadding="3" cellspacing="0">
+        <tr id="title">
+            <th>PROGRAM</th>
+            <th>KELAYAKAN</th>
         </tr>
     <?php
     foreach ($program as $poli => $value){
-        echo "<th colspan=2>$poli</th>";
+        echo "<td colspan=2 id=poli>$poli</td>";
         echo "<tr>";
         foreach ($value as $course =>$test){
             echo "<td rowspan=2>$course</td>";
