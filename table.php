@@ -2,8 +2,8 @@
 $program = [
     'Politeknik Ungku Omar' => [
         'Sarjana Muda Teknokologi Kejuruteraan Awam Dengan Kepujian'=>[
-            '(A)' =>'STPM',
-            '(B)' =>'Matrikulasi'
+            'STPM',
+            'Matrikulasi'
         ],
         'Sarjana Muda Teknokologi Kejuruteraan Pembuatan (Pengurusan Rangkaian Bekalan) Dengan Kepujian'=>[
             'STPM',
